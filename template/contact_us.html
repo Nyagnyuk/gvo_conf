@@ -1,0 +1,62 @@
+@@include('template/layout/header.html')
+
+<main class="content">
+  <section class="contactus">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="form-contactus">
+            <div class="form-title">Форма Обратной Связи</div>
+            <div class="form-body">
+              <form method="post" action="<?=$ServerRoot?>/contact_form.php" id="contact_form" class="conf-form">
+                <input type="hidden" name="Campaign" value="GVOC ContactUs"/>
+                <input type="hidden" name="AffiliateName" value="joeltherien"/>
+                <input type="hidden" name="OptIn" value="0"/>
+                <input type="hidden" name="TrackerName" value="gvoc"/>
+                <input type="hidden" name="ThankyouPage" value="<?=$ServerRoot?>/contact_us.php?thanks=1"/>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Имя" name="FirstName" required="">
+                  <span class="icon-fa"><i class="far fa-user"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Фамилия" name="LastName" required="">
+                  <span class="icon-fa"><i class="fas fa-address-card"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="E-mail" name="Email" required="">
+                  <span class="icon-fa"><i class="far fa-envelope"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Телефонный номер" name="" required="">
+                  <span class="icon-fa"><i class="fas fa-phone"></i></span>
+                </div>
+                <div class="form-group">
+                  <textarea name="">Комментарий</textarea>
+                  <span class="icon-fa"><i class="fas fa-pencil-alt"></i></span>
+                </div>
+                <!--to do recaptcha-->
+                <!--<div>-->
+                <!--<?= $recaptcha ?>-->
+                <!--</div>-->
+                <div class="form-group">
+                  <button type="submit" class="btn btn-submit">Отправить <span class="icon-fa-sub"><i
+                          class="fas fa-angle-double-right"></i></span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="contactus-address">
+            <i class="fas fa-map-marker-alt"></i>
+            <address>
+              GVO Inc.<br>
+              Global Virtual Opportunities<br>
+              6701 Guada Coma Dr.Schertz<br class="d-lg-none"> Texas, USA, 78154
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('template/layout/footer.html')

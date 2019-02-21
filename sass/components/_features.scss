@@ -1,0 +1,59 @@
+//----------------------------------------------------//
+// featur                   						 				      //
+//----------------------------------------------------//
+.banner-featur {
+  background: url(../img/banners_feat.jpg) no-repeat center 82%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.function {
+  padding: 80px 0 35px;
+  .banner-link {
+    width: 80%;
+    margin: 0 auto 60px;
+  }
+  &-item {
+    background-color: #006674;
+    min-height: 50px;
+    text-align: center;
+    font-family: $mainFont;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1px;
+    &-header {
+      color: $secondFontColor;
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    &-title {
+      background-color: #f2f2f6;
+      color: #777777;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      padding: 16px 28px 6px;
+      text-align: center;
+      margin-bottom: 1px;
+      min-height: 90px;
+    }
+    &-img {
+      background-color: #e6e5eb;
+      padding: 15px 24px;
+      text-align: center;
+    }
+  }
+  .col-mar {
+    margin-bottom: 35px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.img-modal {
+  width: 100%;
+}

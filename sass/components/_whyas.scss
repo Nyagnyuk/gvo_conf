@@ -1,0 +1,126 @@
+//----------------------------------------------------//
+// whyas                    						 				      //
+//----------------------------------------------------//
+.banner-whyas {
+  background: url(../img/banners_whyas_mob.jpg) no-repeat center right;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 40px 0;
+  @include media-breakpoint-up(md) {
+    background: url(../img/banners_whyas.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 75px 0 30px;
+  }
+  .banner-title {
+    color: #fff;
+    line-height: 30px;
+    font-size: 22px;
+    @include media-breakpoint-up(md) {
+      line-height: 36px;
+      font-size: 26px;
+    }
+    strong {
+      font-size: 30px;
+      @include media-breakpoint-up(md) {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+.col-pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.whyas {
+  &-text {
+    padding: 40px 0;
+    @include media-breakpoint-up(md) {
+      padding: 70px 0 50px;
+    }
+  }
+  p {
+    color: $mainFontColor;
+    font-family: $mainFont;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  &-next {
+    background: url(../img/banners_whyas_next.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 40px 0;
+    @include media-breakpoint-up(md) {
+      padding: 70px 0 30px;
+    }
+    &-wrap {
+      margin-top: 25px;
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-left: 15px;
+        margin-top: 15px;
+      }
+    }
+  }
+  &-img {
+    img {
+      width: 100%;;
+    }
+  }
+  .packages-list {
+    margin-bottom: 0;
+    @include media-breakpoint-up(lg) {
+      margin-top: -25px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+    }
+  }
+  .packages-item {
+    font-size: 18px;
+    line-height: 40px;
+    @include media-breakpoint-up(lg) {
+      font-size: 15px;
+      line-height: 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+  .packages-item i {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    @include media-breakpoint-up(lg) {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+  .why {
+    padding-bottom: 0;
+  }
+  .packages-link {
+    margin: 45px auto 15px;
+  }
+}

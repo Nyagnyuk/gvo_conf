@@ -1,0 +1,104 @@
+@@include('template/layout/header.html')
+
+<main class="content">
+  <section class="contactus">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <ul class="steps-list">
+            <li class="steps-item"><span>1</span></li>
+            <li class="steps-item active"><span>2</span></li>
+            <li class="steps-item"><span>3</span></li>
+          </ul>
+          <div class="headline">Шаг 2:</div>
+        </div>
+      </div>
+      <div class="headline-desc">Создайте имя пользователя и пароль, после этого Вы будете<br> перенаправлены на
+        страницу оплаты.
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="form-contactus">
+            <div class="form-title">Создать информацию о пользователе</div>
+            <div class="form-body">
+              <div class="form-text">Имя пользователя и пароль должны содержать не менее 4 и не более 20 символов, и
+                состоять только из букв и чисел.
+              </div>
+              <form name="account" method="post" action="" id="signup_form" class="conf-form">
+                <input type="hidden" name="Action" value="Add"/>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Полное имя" name="" required="">
+                  <span class="icon-fa"><i class="far fa-user"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Пароль" name="password" required="">
+                  <span class="icon-fa"><i class="far fa-envelope"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Проверить Пароль" name="password" required="">
+                  <span class="icon-fa"><i class="far fa-envelope"></i></span>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="langsel" name="LangId">
+                    <option value="0" selected="selected">Предпочитаемый язык</option>
+                    <option value="">English</option>
+                    <option value="7">Русский</option>
+                    <option value="8">Español</option>
+                    <option value="9">Polski</option>
+                    <option value="10">Magyar</option>
+                  </select>
+                  <span class="icon-fa"><i class="fas fa-language"></i></span>
+                </div>
+                <div class="terms-block">
+                  <div class="terms-block-title">Политика возврата</div>
+                  <p>Вам обязательно понравятся наши продукты и сервис! В то же время, если что-либо Вас не устроит, Вы
+                    защищены 30-ти дневной гарантией возврата средств!</p>
+                  <p>Мы гарантируем 30-дневный возврат средств. Если Вы по какой-либо причине решите приостановить
+                    пользование вебинарной комнатой Gvo Conference, мы гарантируем, что в течение 30 дней со дня первой
+                    оплаты сервиса полностью вернём Вам данную оплату. На 31-й день средства уже не возвращаются.</p>
+                  <p>Обратите внимание, что в случае приобретения пакета с пробным периодом по цене $1.00 за первые 7
+                    дней пользования сервисом, эта сумма ($1.00) возврату не подлежит.</p>
+                  <p>Повторная оплата любой вебинарной комнаты, сроком пользования более месяца (полгода, год и т.д.)
+                    может быть возвращена в течение 7 дней с момента её проведения. Первая подобная оплата возвращается
+                    на тех же условиях, что и любая другая (за исключением $1.00)</p>
+                  <p>Любые дополнительные пакеты и расширения текущего пакета возвращаются, исходя из вышеописанной
+                    политики возврата.</p>
+                  <p>Чтобы закрыть аккаунт и получить средства обратно согласно данной политике возврата, пожалуйста,
+                    свяжитесь с нами через систему заявок в Вашем аккаунте или онлайн-чат.</p>
+                  <p>Вы также можете позвонить в наш офис: 1-210-651-4487 (для жителей США звонки бесплатны, стоимость
+                    звонков для жителей других стран зависит от оператора) с 17-00 до 01-00 по МСК</p>
+                  <p>Gvo Conference<br>
+                    Attn: Returns Department<br>
+                    6701 Guada Coma Drive<br>
+                    Schertz, Texas 78154<br>
+                    USA</p>
+                  <p>Эта политика возврата была обновлена 03-18-2017.</p>
+                  <p>© Law Office of Michael E. Young, LLC, и лицензировано для использования владельцем этого сайта по
+                    адресу
+                    <a href="malto:http://www.gvoconference.com/ru/">http://www.gvoconference.com/ru/</a></p>
+                  <p>Все права защищены. Никакая часть этого документа не может быть скопирована или использована
+                    кем-либо иным, кроме лицензиата, без прямого письменного разрешения владельца авторских прав.</p>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="confirm" name="Terms" value="Agree"> Я cогласен с
+                    <a href="#">условиями и соглашениями</a>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-submit">Создать аккаунт <span class="icon-fa-sub"><i
+                          class="fas fa-angle-double-right"></i></span></button>
+                </div>
+                <!--<a href="javascript:void(0);" onclick="document.getElementById('unsubscribe_form').submit();" style="text-decoration:none;"><img src="<?=$ServerRoot?><?=__img("/images/en/unsubscribe.png")?>" alt="" /></a>-->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</main>
+
+@@include('template/layout/footer.html')
+

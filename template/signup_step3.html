@@ -1,0 +1,216 @@
+@@include('template/layout/header.html')
+
+<main class="content">
+  <section class="contactus">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <ul class="steps-list">
+            <li class="steps-item"><span>1</span></li>
+            <li class="steps-item"><span>2</span></li>
+            <li class="steps-item active"><span>3</span></li>
+          </ul>
+          <div class="headline">Шаг 3:</div>
+        </div>
+      </div>
+      <div class="headline-desc">Формирование Вашего заказа</div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-contactus">
+            <div class="form-title">Контактная и платежная информация</div>
+            <div class="form-body">
+              <div class="form-text">*Необходимо заполнить все поля</div>
+              <form name="account" method="post" action="" id="account" class="conf-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Полное имя" name="" required="">
+                  <span class="icon-fa"><i class="fas fa-user"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Адрес" name="" required="">
+                  <span class="icon-fa"><i class="fas fa-address-card"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Город" name="" required="">
+                  <span class="icon-fa"><i class="fas fa-university"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Населенный пункт" name="" required="">
+                  <span class="icon-fa"><i class="fas fa-map-marker-alt"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Почтовый индекс" name="" required="">
+                  <span class="icon-fa"><i class="fas fa-envelope"></i></span>
+                </div>
+                <div class="form-group">
+                  <select name="CCCountry" class="form-control">
+                    <option value="0">Выбрать страну</option>
+                    <option value="US">United States</option>
+                    <!--<option value="0"><?=__("Select Country")?></option>-->
+                    <!--<?foreach($top_cc_countries as $code=>$country_name){?>-->
+                    <!--<option value="<?=$code?>"<?=(isset($billing->CCCountry) && ($billing->CCCountry==$code) && $code != 0)?" selected=\"selected\"":""?><?=($code === 0)?" disabled":"";?>><?=__($country_name)?></option>        <?}?>                <?foreach($cc_countries as $code=>$country_name){?>        <option value="<?=$code?>"<?=(isset($billing->CCCountry) && ($billing->CCCountry==$code) && $code != 0)?" selected=\"selected\"":""?><?=($code === 0)?" disabled":"";?>><?=__($country_name)?></option>        <?}?>-->
+                  </select>
+                  <span class="icon-fa"><i class="fas fa-globe"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Номер телефона" name="" required="">
+                  <span class="icon-fa"><i class="fas fa-phone"></i></span>
+                </div>
+                <div class="form-text"><i class="fas fa-lock"></i> Защищенное SSL шифрование данных - Ваша Информация
+                  Надежно Защищена.
+                </div>
+                <div class="form-img"><img src="img/pic_6.png" class="img-fluid" alt="payment"></div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Имя, указанное на кредитной карте" name=""
+                         required="">
+                  <span class="icon-fa"><i class="fas fa-user-tie"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Номер кредитной карты" name="" required="">
+                  <span class="icon-fa"><i class="fas fa-credit-card"></i></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Код кредитной карты (CVV2, CVC2 или CID)" name=""
+                         required="">
+                  <span class="icon-fa"><i class="fas fa-th"></i></span>
+                </div>
+                <div class="form-data">Дата истечения срока действия кредитной карты:</div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <select class="form-control" name="" required>
+                        <option selected>Месяц</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                      <span class="icon-fa"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <select class="form-control" name="" required>
+                        <option>Год</option>
+                        <option>2019</option>
+                      </select>
+                      <span class="icon-fa"><i class="fas fa-calendar-alt"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <select name="CCCountry" class="form-control">
+                    <option value="0">Способ оплаты</option>
+                    <option value="US">United States</option>
+                  </select>
+                  <span class="icon-fa"><i class="far fa-credit-card"></i></span>
+                </div>
+
+                <div class="form-data"><strong>Поздравляем! Вам необходим всего один щелчек мышки, чтобы начать
+                  немедленно!</strong>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-submit-red"><span class="icon-fa-sub-red"><i
+                          class="fas fa-shopping-basket"></i></span> Сделать заказ
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="form-img"><img src="img/gar.png" class="img-fluid" alt="payment"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="specif">
+            <div class="specif-title">характеристики продукта</div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-sliders-h"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">АУДИО/ВИДЕО УПРАВЛЕНИЕ</div>
+                <p>Включение и выключение камеры и микрофона.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-broadcast-tower"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">СВОБОДНОЕ ВЕЩАНИЕ</div>
+                <p> Модераторы в комнате могут начать вещание нажатием на кнопку.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-bullhorn"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">НАЧАТЬ ВЕЩАНИЕ</div>
+                <p>Нажатие активирует голосовое вещание членам конференц-комнаты.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-comments"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">ЧАТ</div>
+                <p>Текстовые сообщения всем гостям.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-folder-open"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">ДОСТУП КО ВСЕМ ОБЩИМ ФАЙЛАМ</div>
+                <p>Отправка файлов гостям в комнате.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-users"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">ПОЛНОЦЕННЫЙ РЕЖИМ ОДНОВРЕМЕННОГО ВЕЩАНИЯ 1-4</div>
+                <p> Перетяните до четырех пользователей в окне браузера и включите аудио и видео чат.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-desktop"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">ДЕМОНСТРАЦИЯ СВОЕГО РАБОЧЕГО СТОЛА</div>
+                <p>Модератор может демонстрировать рабочий стол пользователям.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-file-powerpoint"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">ПРЕЗЕНТАЦИИ</div>
+                <p>Конвертация и показ ваших Power Point презентаций.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fab fa-youtube"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">ПОТОКОВОЕ ВИДЕО</div>
+                <p>Воспроизведение потокового видео прямо в комнате.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-video"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">ЗАПИСЬ</div>
+                <p>Модератор может записывать видео и аудио презентации.</p>
+              </div>
+            </div>
+            <div class="specif-item">
+              <span class="specif-icon"><i class="fas fa-pencil-alt"></i></span>
+              <div class="specif-text">
+                <div class="specif-heading">ФУНКЦИЯ РИСОВАНИЯ</div>
+                <p> Рисуйте поверх презентации, видео, выделяйте важную информацию.</p>
+                <p class="specif-etc">И многое другое...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('template/layout/footer.html')

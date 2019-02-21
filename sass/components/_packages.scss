@@ -1,0 +1,387 @@
+//----------------------------------------------------//
+// packages                  						 				      //
+//----------------------------------------------------//
+.banner-packages {
+  background: url(../img/banners_packages_mob.png) no-repeat center bottom;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 70px 0;
+  @include media-breakpoint-up(md) {
+    background: url(../img/banners_packages.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 100px 0;
+  }
+  .banner-title {
+    margin-bottom: 0;
+    line-height: 30px;
+    font-size: 22px;
+    strong {
+      font-size: 30px;
+      @include media-breakpoint-up(md) {
+        font-size: 36px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      line-height: 36px;
+      font-size: 26px;
+    }
+  }
+}
+
+.rate {
+  padding: 40px 0 0;
+  @include media-breakpoint-up(md) {
+    padding: 70px 0 0;
+  }
+}
+
+.more {
+  padding-bottom: 0;
+}
+
+.packages {
+  &-link {
+    max-width: 288px;
+    margin: 0 auto 55px;
+  }
+  &-func {
+    p {
+      color: #424242;
+      font-family: $mainFont;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  &-list {
+    margin-bottom: 50px;
+  }
+  &-item {
+    color: #424242;
+    font-family: $mainFont;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+    }
+    i {
+      width: 24px;
+      height: 24px;
+      background-color: #7bcfd9;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 24px;
+      color: #fff;
+      position: relative;
+      text-align: center;
+      margin-right: 20px;
+      font-size: 12px;
+    }
+    i:after {
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      bottom: -4px;
+      right: -4px;
+      border-radius: 50%;
+      border: 2px solid #7bcfd9;
+      content: '';
+    }
+  }
+  &-func {
+    margin-top: -30px;
+  }
+}
+
+.panel-more {
+  margin-bottom: 40px;
+  font-family: $mainFont;
+  margin-right: -14px;
+  margin-left: -14px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+  &-title {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $mainFont;
+    color: $secondFontColor;
+    font-weight: 400;
+    margin-bottom: 2px;
+    min-height: 67px;
+    padding: 5px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 5px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+      line-height: 18px;
+      padding: 5px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 50px;
+    }
+    span {
+      font-size: 11px;
+      @include media-breakpoint-up(md) {
+        font-size: 12px;
+      }
+    }
+  }
+  &-body li {
+    color: $mainFontColor;
+    font-weight: 300;
+    margin-bottom: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 2px;
+    min-height: 150px;
+    @include media-breakpoint-up(md) {
+      min-height: 116px;
+    }
+    @include media-breakpoint-up(lg) {
+      min-height: 150px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .panel-sale {
+    font-size: 18px;
+    margin-bottom: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    span {
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      display: inline-block;
+      font-size: 9px;
+      width: 29px;
+      line-height: 32px;
+      background: url(../img/figura_mob.png) no-repeat;
+      margin-left: 8px;
+      @include media-breakpoint-up(lg) {
+        font-size: 14px;
+        background: url(../img/figura.png) no-repeat;
+        line-height: 42px;
+        width: 42px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+    }
+  }
+  .panel-del {
+    text-decoration: line-through;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 0;
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+    }
+  }
+  .panel-price {
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 700;
+    font-family: $mainFont;
+    width: 100%;
+    margin-bottom: 0;
+    @include media-breakpoint-up(md) {
+      font-size: 17px;
+      line-height: 17px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 26px;
+      line-height: 26px;
+    }
+    span {
+      font-size: 16px;
+      @include media-breakpoint-up(md) {
+        font-size: 11px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+    }
+  }
+  .panel-month {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 0;
+    span {
+      font-size: 12px;
+      @include media-breakpoint-up(md) {
+        font-size: 9px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 12px;
+      }
+    }
+    i {
+      color: rgb(255, 78, 64);
+      font-size: 16px;
+      @include media-breakpoint-up(md) {
+        font-size: 12px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+    }
+  }
+  .panel-link {
+    font-size: 14px;
+    padding: 0 28px 0 3px;
+    background-color: rgb(255, 78, 64);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    min-height: 28px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      background-color: #c12627;
+      .panel-icon {
+        background-color: #e09393;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+      padding: 0 10px 0 3px;
+      min-height: 19px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 14px;
+      padding: 0 28px 0 3px;
+      min-height: 28px;
+    }
+    .panel-icon {
+      position: relative;
+      background-color: #ffb8b3;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      margin-right: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 12px;
+      transition: all .3s ease-in-out;
+      @include media-breakpoint-up(md) {
+        width: 15px;
+        height: 15px;
+        font-size: 8px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 22px;
+        height: 22px;
+        margin-right: 4px;
+        font-size: 12px;
+      }
+    }
+    i {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      content: '';
+    }
+  }
+}
+
+.panel-more-first {
+  .panel-more-title {
+    background-color: #959597;
+    font-size: 12px;
+    line-height: 13px;
+    word-break: break-word;
+    span {
+      font-size: 12px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 17px;
+      line-height: 18px;
+    }
+  }
+  li {
+    background-color: #d9d8de;
+    font-size: 12px;
+    line-height: 16px;
+    justify-content: left;
+    padding-left: 15px;
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.panel-more-one {
+  .panel-more-title {
+    background-color: #7bcfd9;
+  }
+  li {
+    background-color: #f9fafc;
+  }
+}
+
+.panel-more-second {
+  .panel-more-title {
+    background-color: #32b3c6;
+  }
+  li {
+    background-color: #f2f2f6;
+  }
+}
+
+.panel-more-third {
+  .panel-more-title {
+    background-color: #1abbb9;
+  }
+  li {
+    background-color: #ebeaef;
+  }
+}
+
+.panel-more-fourth {
+  .panel-more-title {
+    background-color: #1a90a0;
+  }
+  li {
+    background-color: #e0dfe6;
+  }
+}
+
+.panel-more-fifth {
+  .panel-more-title {
+    background-color: #00a9a0;
+  }
+  li {
+    background-color: #e6e5eb;
+  }
+}

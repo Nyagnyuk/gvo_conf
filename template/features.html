@@ -1,0 +1,290 @@
+@@include('template/layout/header.html')
+
+<main class="content">
+  <section class="banner-featur banner-page">
+    <div class="container">
+      <h1 class="banner-title"><strong>GVO Conference</strong> - только практичный функционал<br> для Вашего успешного
+        вебинара!</h1>
+    </div>
+  </section>
+  <section class="function">
+    <div class="container">
+      <div class="content-title-pages">Эти и многие другие функции включены!</div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="banner-link">
+            <a href="#" class="butn-link butn-link-red">Хочу купить <i class="fas fa-angle-double-right"></i> </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-address-card"></i> Гости</div>
+          </div>
+          <div class="function-item-title">Просмотр всех присутствующих гостей в комнате. Список можно скрыть или
+            сделать доступным только модераторам.
+          </div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/guests.png" data-title="Гости" data-toggle="modal">
+              <img src="img/guests.png" alt="guest" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-user-friends"></i> Модераторы</div>
+          </div>
+          <div class="function-item-title">Возможность создать множество модераторов.</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/moderators.png" data-title="Модераторы" data-toggle="modal">
+              <img src="img/moderators.png" alt="moderators" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-comment-dots"></i> Режим Говорить</div>
+          </div>
+          <div class="function-item-title">Гостям можно запретить возможность использования кнопки "Говорить".</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/speak.png" data-title="Режим Говорить" data-toggle="modal">
+              <img src="img/speak.png" alt="speak" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-comments"></i> Чат</div>
+          </div>
+          <div class="function-item-title">Управление чатом. Очистка истории чата.
+            Режим блокирования отправки в чат ссылок.
+            Ограничение просмотра сообщений гостями.
+            Блокировка чата.
+          </div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/chat.png" data-title="Чат" data-toggle="modal">
+              <img src="img/chat.png" alt="speak" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-folder-open"></i> Доступ к общим файлам</div>
+          </div>
+          <div class="function-item-title">Возможность отправлять файлы гостям в комнате. Возможность запретить
+            пользователям доступ к общим файлам.
+          </div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/share_files.png" data-title="Доступ к общим файлам"
+               data-toggle="modal">
+              <img src="img/share_files.png" alt="speak" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-cogs"></i> Настройки</div>
+          </div>
+          <div class="function-item-title">Редактирование настроек камеры, микрофона, чата, заднего плана и многого
+            другого.
+          </div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/settings.png" data-title="Настройки" data-toggle="modal">
+              <img src="img/settings.png" alt="settings" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-video"></i> Встроенный видео-плеер</div>
+          </div>
+          <div class="function-item-title">Возможность включать видео во время конференции. Возможность загружать видео
+            с компьютера или Youtube.
+          </div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/video_player.png" data-title="Встроенный видео-плеер"
+               data-toggle="modal">
+              <img src="img/video_player.png" alt="video_player" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-desktop"></i> Показ экрана компьютера</div>
+          </div>
+          <div class="function-item-title">Модератор может показывать экран компьютера гостям в комнате.</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/desktop_browse.png" data-title="Показ экрана компьютера"
+               data-toggle="modal">
+              <img src="img/desktop_browse.png" alt="desktop_browse" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-broadcast-tower"></i> Трансляция на youtube
+              и facebook
+            </div>
+          </div>
+          <div class="function-item-title">Гостям можно запретить возможность использования кнопки "Говорить".</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/fb_broadcast.png" data-title="Трансляция на youtube
+                    и facebook" data-toggle="modal">
+              <img src="img/fb_broadcast.png" alt="fb_broadcast" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fab fa-youtube"></i> Показ видео</div>
+          </div>
+          <div class="function-item-title">Потоковое видео онлайн.</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/video_online.png" data-title="Показ видео" data-toggle="modal">
+              <img src="img/video_online.png" alt="video_online" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-chart-bar"></i> Режим голосования</div>
+          </div>
+          <div class="function-item-title">Опросы. Возможность проведения голосований.</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/vote.png" data-title="Режим голосования" data-toggle="modal">
+              <img src="img/vote.png" alt="vote" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-users"></i> Групповое вещание</div>
+          </div>
+          <div class="function-item-title">До 5 ведущих одновременно.
+          </div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/grop.png" data-title="Групповое вещание" data-toggle="modal">
+              <img src="img/grop.png" alt="grop" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="far fa-window-restore"></i> Информационное окно</div>
+          </div>
+          <div class="function-item-title">Панель для вывода важной информации для всех гостей.</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/info_window.png" data-title="Информационное окно"
+               data-toggle="modal">
+              <img src="img/info_window.png" alt="grop" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-file-powerpoint"></i> Презентации</div>
+          </div>
+          <div class="function-item-title">Возможность загрузить и включить презентацию PowerPoint.</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/presentation.png" data-title="Презентации" data-toggle="modal">
+              <img src="img/presentation.png" alt="presentation" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="far fa-window-maximize"></i> Редактируемый размер окна</div>
+          </div>
+          <div class="function-item-title">Возможность редактировать размер окна.</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/window_size.png" data-title="Редактируемый размер окна"
+               data-toggle="modal">
+              <img src="img/window_size.png" alt="window_size" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-lock"></i> Блокировка комнаты<br>
+              до начала вебинара
+            </div>
+          </div>
+          <div class="function-item-title">Возможность установить таймер показа времени до начала видео-конференции.
+          </div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/block.png" data-title="Блокировка комнаты до начала вебинара"
+               data-toggle="modal">
+              <img src="img/block.png" alt="block<br>" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-pencil-alt"></i> Доска для рисования</div>
+          </div>
+          <div class="function-item-title">Графики, рисунки поверх презентации или на белом фоне.</div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/draw.png" data-title="Доска для рисования" data-toggle="modal">
+              <img src="img/draw.png" alt="draw" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-mar">
+          <div class="function-item">
+            <div class="function-item-header"><i class="fas fa-puzzle-piece"></i> что-то новенькое</div>
+          </div>
+          <div class="function-item-title">Наша команда постоянно разрабатывает улучшения для вебинарных комнат.
+            Сообщение о новом функционале придет на Ваш имейл.
+          </div>
+          <div class="function-item-img">
+            <a data-target="#imageModal" data-src="img/renew.png" data-title="Что-то новенькое" data-toggle="modal">
+              <img src="img/renew.png" alt="renew" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trealweek">
+    <div class="container">
+      <div class="trealweek-title">Возможность проведения конференции еще не была такой доступной - начните Ваш вебинар
+        уже через несколько минут!
+      </div>
+      <div class="trealweek-desc">Мы представляем продукт, демонстрируем, обучаем, обеспечиваем<br> поддержку и
+        транслируем - все это в любой точке земного шара!
+      </div>
+      <div class="trealweek-test">Пробная неделя <span>всего за</span> $1.00!</div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+          <div class="trealweek-link"><a href="#" class="butn-link butn-link-red">Да, хочу попробовать сейчас! <i
+                  class="fas fa-angle-double-right"></i></a></div>
+        </div>
+      </div>
+      <div class="row align-items-sm-center">
+        <div class="col-md-12 col-lg-1 offset-lg-2"><img src="img/guarantee.png" alt="guarantee"></div>
+        <div class="col-md-12 col-lg-6">
+          <div class="trealweek-back">И да, мы вернем Вам деньги, если вдруг в ходе тестирования вебинарной комнаты Вам
+            что-то не подойдёт. Пожалуйста, ознакомьтесь с политикой возврата, она Вас приятно удивит.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="modal mc-modal fade" id="imageModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-capitalize"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"
+                                                                                       aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid img-modal" src=""/>
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('template/layout/footer.html')
